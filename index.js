@@ -108,10 +108,10 @@ Baby.prototype.play=function(){
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Window binding is not something we should be using. 
+  2. We should give "this" some context. Otherwise, it can default to the global object in node.
+  3. If you are in strict mode, you will get undefined.
+  4. This helps you identify what you are refering to within the object. 
 */
 
 
