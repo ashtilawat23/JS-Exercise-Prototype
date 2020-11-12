@@ -81,7 +81,7 @@ function Car(model,milesPerGallon) {
 }
 
 Car.prototype.fill = function(gallons){
-  this.tank=gallons;
+  this.tank=+gallons;
 }
 
 Car.prototype.drive = function(distance){
@@ -103,8 +103,8 @@ Car.prototype.drive = function(distance){
         + Should return a string "Playing with x", x being the favorite toy.
 */
 
-function Baby(name,age,favoriteToy) {
-  Person.call(this,name,age);
+function Baby(attributes,favoriteToy) {
+  Person.call(this,attributes);
   this.favoriteToy=favoriteToy;
 }
 
