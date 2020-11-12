@@ -84,6 +84,16 @@ Car.prototype.fill = function(gallons){
   this.tank=gallons;
 }
 
+Car.prototype.drive = function(distance){
+  let range = this.tank*this.milesPerGallon;
+  if(range<=distance){
+    this.odometer=+distance;
+    this.tank=-distance/this.milesPerGallon;
+  }
+  else if(range>distance){
+    console.log(`${this.model} can't go that far! It doesn't have enough gas in the tank.`)
+  }
+}
 
 /*
   TASK 3
