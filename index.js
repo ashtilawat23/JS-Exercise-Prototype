@@ -48,6 +48,8 @@ function Person(name, age){
 Person.prototype.eat = function(edible){
   if(this.stomach.length < 10){
     this.stomach.push(edible);
+  } else{
+    console.log('Stomach Full')
   }
 }
 
@@ -56,7 +58,7 @@ Person.prototype.poop = function(){
 }
 
 Person.prototype.toString = function(){
-  return `${this.name}, ${this.age}`;
+  return `${this.name},${this.age}`;
 }
 
 /*
